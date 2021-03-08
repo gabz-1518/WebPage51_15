@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="-IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <main>
+        <article>
+            <h1>Etiquetas input y otras para crear formularios</h1>
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Ejemplos de input</legend>
+                    <!--lista desplegable-->
+                    <div>
+                        <label for="carrera">Carrera:</label>
+                        <select name="carrera" id="carrera">
+                            <option value="4">LTI</option>
+                            <option value="3">LA</option>
+                            <option value="8">CP</option>
+                            <option value="5">LNI</option>
+                        </select>
+                    </div>
+                    <!-- lista selección multiple-->
+                    <div>
+                        <label for="carreramult">Sel. Carrera:</label>
+                        <select name="carreramult" id="carreramult" multiple>
+                            <option value="4">LTI</option>
+                            <option value="3">LA</option>
+                            <option value="8">CP</option>
+                            <option value="5">LNI</option>
+                        </select>
+                    </div>
+                    <!--lista grupos de opciones-->
+                    <div>
+                        <label for="carreragpo">Carreras:</label>
+                        <select name="carreragpo" id="carreragpo">
+                            <optgroup label="Profesionales">
+                                <option value="4">LTI</option>
+                                <option value="3">LA</option>
+                                <option value="8">CP</option>
+                                <option value="5">LNI</option>
+                            </optgroup>
+                            <optgroup label="Técnicas">
+                                <option value="15">Desarrollo de software</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" name="genero" id="masculino">
+                        <label for="femenino">Femenino</label>
+                        <input type="radio" name="genero" id="femenino">
+                    </div>
+                    <div>
+                        <input type="radio" name="equipos" id="masculino">
+                        <input type="radio" name="equipos" id="femenino">
+                        <input type="radio" name="equipos" id="femenino">
+                        <input type="radio" name="equipos" id="femenino">
+                        <input type="radio" name="equipos" id="femenino">
+                    </div>
+                    <div>
+                        <label for="">Comentarios</label>
+                        <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+                    </div>
+                    <!--data list-->
+                    <div>
+                        <label for="lenguaje">Lenguaje</label>
+                        <input type="text" name="lenguaje" id="lenguaje" list="Lenguajes">
+                        <datalist id="Lenguajes">
+                            <option value="python">
+                            <option value="visual basic">
+                            <option value="ruby">
+                            <option value="java">
+                            <option value="c++">
+                            <option value="c#">
+                            <option value="c">
+                        </datalist>
+                    </div>
+
+                    <div>
+                        <label for="">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre">
+                    </div>
+                    <div>
+                        <label for="casado">¿Es usted casado?</label>
+                    <input type="checkbox" name="casado" id="casado">
+                    </div>
+
+                    <div>
+                        <label for="color">¿Color favorito?</label>
+                        <input type="color" name="color" id="color">
+                    </div>
+
+                    <div>
+                        <input type="date" name="fecha" id="fecha">
+                    </div>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Otros ejemplos</legend>
+                </fieldset>
+            </form>
+        </article>
+    </main>
+</body>
+</html>
